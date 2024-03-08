@@ -9,9 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UserDetail {
+public class CourseParticipating {
     private Long id;
-    private String email;
-    private String fullName;
+    private String title;
+    private String description;
     private String image;
+    private Long percent;
 }

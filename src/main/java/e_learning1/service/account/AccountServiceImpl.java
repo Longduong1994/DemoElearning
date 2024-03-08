@@ -56,7 +56,7 @@ public class AccountServiceImpl implements AccountService{
                 .id(account.get().getId())
                 .email(account.get().getEmail())
                 .fullName(account.get().getFullName())
-                .isLogin(account.get().getIsLogin())
+                .image(account.get().getImage())
                 .email(account.get().getEmail()).build();
     }
 }

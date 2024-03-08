@@ -13,11 +13,4 @@ public class LessonServiceImpl implements LessonService {
         return lessonRepository.countByCourse(courseId);
     }
 
-    @Override
-    public int percentComplete(Long courseId) {
-        int sumCount = lessonRepository.countByCourse(courseId);
-        int completeCount = lessonRepository.countByCourseCompleted(courseId);
-        if (sumCount == 0) return 0;
-        return (completeCount * 100) / sumCount;
-    }
 }

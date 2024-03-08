@@ -21,9 +21,5 @@ public class LessonController {
         return new ResponseEntity<>(lessonService.countSessionByCourse(id), HttpStatus.OK);
     }
 
-    @GetMapping("course/{courseId}")
-    public ResponseEntity<?> getPercentComplete(@PathVariable("courseId") String courseId ){
-        Long id = Long.parseLong(courseId);
-        return new ResponseEntity<>(lessonService.percentComplete(id), HttpStatus.OK);
-    }
+
 }

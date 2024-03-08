@@ -14,4 +14,5 @@ public class CourseResponse {
     private String title;
     private String description;
     private String image;
+    private int units;
 }
