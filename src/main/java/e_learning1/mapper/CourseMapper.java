@@ -22,6 +22,7 @@ public class CourseMapper {
                 .title(course.getTitle())
                 .description(course.getDescription())
                 .image(course.getImage())
+                .category(course.getCategory().getCategoryName())
                 .units(unit).build();
     }
 
@@ -34,6 +35,7 @@ public class CourseMapper {
                 .title(course.getTitle())
                 .description(course.getDescription())
                 .image(course.getImage())
+                .category(course.getCategory().getCategoryName())
                 .percent(completed*100/unit).build();
     }
 }
